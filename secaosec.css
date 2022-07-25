@@ -194,4 +194,8 @@
   .titulo {
     padding: 10px 10px 0 10px;
   }
+
+  .titulo-cabecalho {
+    font-size: 14px;
+  }
 }
