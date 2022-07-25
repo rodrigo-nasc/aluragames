@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+.corpo {
+  background-color: rgb(243, 239, 239);
+}
+
+.populares {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 90vh;
+  gap: 0.5rem;
+  grid-template-areas:
+    "fortnite fortnite fortnite pubg"
+    "fortnite fortnite fortnite slack"
+    "submenu submenu cs whatsapp";
+}
+
+.fortnite {
+  grid-area: fortnite;
+  background: url(/img/fortnite.jpg) center/cover no-repeat;
+}
+
+.pubg {
+  grid-area: pubg;
+  background: url(/img/pubg.jpg) center/cover no-repeat;
+}
+
+.slack {
+  grid-area: slack;
+  background: url(/img/slack.png) center/cover no-repeat;
+}
+
+.whatsapp {
+  grid-area: whatsapp;
+  background: url(/img/whatsapp.png) center/cover no-repeat;
+}
+
+.submenu {
+  grid-area: submenu;
+}
+
+.destaques {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+}
+
+.card a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-self: flex-end;
+  width: 100%;
+  text-align: center;
+}
+
+.subitens {
+  width: 49%;
+}
+
+.subitens a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.cs {
+  grid-area: cs;
+  background: url(/img/cs-go.jpg) center/cover no-repeat;
+}
